@@ -1,0 +1,156 @@
+/* Base styling */
+body {
+    margin: 0;
+    padding: 2em;
+    background-color: #efdfc0;
+    /* Parchment-like background */
+    color: #111;
+    font-family: "Georgia", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main.member-card {
+    background-color: #efdfc0;
+    border: 1px solid #d4af37;
+    border-radius: 12px;
+    padding: 2em;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+/* Header and Name */
+.member-card h1 {
+    font-size: 2em;
+    margin: 0.5em 0;
+    font-family: "Garamond", "Georgia", serif;
+    color: #b8860b;
+}
+
+/* Profile Photo */
+.profile-pic {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
+    border: 2px solid #d4af37;
+    margin-bottom: 1em;
+}
+
+/* Insignia */
+.insignia {
+    display: block;
+    margin: 0 auto 1.5em auto;
+    max-width: 140px;
+    height: auto;
+}
+
+/* Membership Details */
+.member-card p {
+    margin: 0.5em 0;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #222;
+}
+
+/* Navigation */
+.member-nav {
+    margin-top: 2em;
+}
+
+.member-nav a {
+    display: block;
+    padding: 0.75em;
+    margin: 0.5em auto;
+    max-width: 250px;
+    text-decoration: none;
+    background-color: #efdfc0;
+    color: #333;
+    border: 1px solid #d4af37;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+    font-family: "Georgia", serif;
+}
+
+.member-nav a:hover {
+    background-color: #d4af37;
+    color: #000;
+}
+
+.header-pair {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    flex-wrap: wrap;
+    margin-bottom: 1.5em;
+}
+
+.insignia,
+.profile-pic {
+    width: 160px;
+    height: auto;
+    object-fit: cover;
+    border: 2px solid #d4af37;
+}
+
+.profile-insignia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    flex-wrap: wrap;
+    margin-bottom: 1.5em;
+}
+
+.profile-insignia img {
+    max-width: 220px;
+    height: auto;
+    border: 2px solid #d4af37;
+    background: #efdfc0;
+}
+
+.profile-insignia .insignia {
+    border: none;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 600px) {
+    main.member-card {
+        padding: 1em;
+        width: 90%;
+    }
+
+    .insignia,
+    .profile-pic {
+            width: 120px;
+    }
+
+    .header-pair {
+        gap: 1em;
+    }
+
+    .member-nav a {
+        max-width: 100%;
+        font-size: 1em;
+        padding: 0.5em;
+    }
+
+    .member-card h1 {
+        font-size: 1.5em;
+    }
+
+    .member-card p {
+        font-size: 1em;
+    }
+}
+
+
+
+
+    
