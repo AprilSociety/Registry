@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>April Society Member Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Base Page Styling */
+        body {
+            margin: 0;
+            padding: 2em;
+            background-color: #696c38;
+            color: #111;
+            font-family: "Georgia", serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        main.member-card {
+            background-color: #efdfc0;
+            border: 4px solid #d4af37;
+            border-radius: 12px;
+            padding: 2em;
+            max-width: 700px;
+            width: 100%;
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        /* Top Row: Profile + Insignia */
+        .top-images {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2em;
+            flex-wrap: wrap;
+            margin-bottom: 1.5em;
+        }
+
+        .top-images img {
+            max-width: 200px;
+            height: auto;
+            border: 4px solid #d4af37;
+            background-color: #efdfc0;
+        }
+
+        .top-images .insignia {
+            border: 4px solid #d4af37;
+            max-width: 180px;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #696c38;
+            margin-top: 0.5em;
+            margin-bottom: 0.2em;
+        }
+
+        p {
+            font-size: 1em;
+            line-height: 1.6;
+            color: #222;
+            margin: 0.2em 0;
+        }
+
+        nav.member-nav {
+            margin-top: 2em;
+        }
+
+        .member-nav a {
+            display: block;
+            padding: 0.75em;
+            margin: 0.5em auto;
+            max-width: 250px;
+            text-decoration: none;
+            background-color: #d0a144;
+            color: #333;
+            border: 1px solid #d4af37;
+            border-radius: 6px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            font-weight: bold;
+            font-family: "Georgia", serif;
+        }
+
+        .member-nav a:hover {
+            background-color: #d4af37;
+            color: #000;
+        }
+
+        @media (max-width: 600px) {
+            .top-images {
+                flex-direction: column;
+            }
+
+            .top-images img {
+                max-width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="member-card">
+        <!-- Profile and Insignia -->
+        <div class="top-images">
+            <img src="../../assets/photos/insignia.png" alt="April Society Insignia" class="insignia">
+            <img src="../../assets/photos/B0005.png" alt="Member Photo">
+        </div>
+
+        <!-- Member Info -->
+        <h1>Welcome, Claire Draeger</h1>
+        <p>Member Since: <strong>August 8th, 2025</strong></p>
+        <p>Tier: <strong>Associate</strong></p>
+        <p>Sponsor: <strong>A0001</strong></p>
+        <p>Status: <strong>Active</strong></p>
+
+        <!-- Contact -->
+         <hr>
+        <p>You have been invited to share the honor of <strong>association</strong> with The April Society. You may be further invited to some private events and receive select communications, <strong>but you should not represent yourself as a full member.</strong></p>
+        <hr>
+        <p>If you have questions, feel free to </p><a href="mailto:aprilsociety.mail@gmail.com">contact us</a> at your leisure.</p>
+    </main>
+
+</body>
+
+</html>
